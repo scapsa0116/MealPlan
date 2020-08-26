@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Your name</title>
+    </head>
+    <body>
+    
+
+  <%= form_tag users_path do %>
+  <label>Name:</label><br>
+  <%= text_field_tag :'name' %><br>
+ 
+  <label>Weight:</label><br>
+  <%= text_field_tag :'weight' %><br>
+ 
+  <%= submit_tag "Submit" %>
+<% end %>
+</body>
+</html>

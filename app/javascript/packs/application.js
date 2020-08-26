@@ -15,3 +15,29 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let buttonElement = document.getElementById('click');
+
+    buttonElement.addEventListener('click', event => {
+        console.log('An event was triggered:' + event.type);
+    });
+});
+
+
+fetch('www.zespri.com/en-US/recipesearch')
+.then((res) => res.json())
+.then(data => console.log(data))
+
+// function setup(){
+//     loadJSON("https://www.zespri.com/en-US/recipes", gotData, 'jsonp');
+// }
+
+// function gotData(data){
+//     console.log(data);
+// }
+
+
+
+
